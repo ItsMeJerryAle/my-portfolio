@@ -1,0 +1,191 @@
+.laptop_container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.laptop {
+    width: 1500px;
+    min-width: 1200px;
+    height: 885px;
+    position: fixed;
+    z-index: 1;
+}
+
+.mobile {
+    width: 80%;
+    height: auto;
+    display: none;
+}
+
+.laptop_content {
+    margin-top: 60px;
+    width: 972px;
+    height: 610px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background-repeat: no-repeat;
+    background: round;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+    flex-direction: row;
+}
+
+.laptop_header {
+    color: blue;
+}
+
+.laptop_taskbar {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex: 1;
+    background-color: rgba(0,0,0,0.3);
+    bottom: 0;
+    margin: 0;
+    flex-direction: row;
+    padding: 7px 0 7px 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.laptop_taskbar-notif {
+    flex-direction: row; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.laptop_taskbar-notif svg,
+.laptop_taskbar-notif-content {
+    color: var(--color-white);
+    padding: 15px 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.laptop_taskbar-notif svg:hover,
+.laptop_taskbar-notif-content:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.laptop_taskbar-notif-content {
+    display: flex;
+    padding: 10px 5px;
+    margin: 0;
+}
+.dateTime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dateTime p {
+    margin: 0 0 0 5px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 300;
+    font-family: var(--font-base);
+}
+
+.window-button {
+    padding: 18px 15px;
+    margin-top: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.window-button:hover,
+.window-button svg:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: #1683e9;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: black;
+}
+
+.main_menu-popup {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    background-color: #fff;
+}
+
+.notification-popup {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    -ms-flex-align: end;
+}
+
+.laptop_content-area {
+    position: absolute;
+    margin-bottom: 44px;
+}
+
+.main_menu-popup-contents {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: #1683e9;
+}
+
+@media screen and (max-width: 900px) {
+    .laptop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}
+
+.slide-bottom {
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(10%);
+              transform: translateY(10%);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  @keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(10%);
+                transform: translateY(10%);
+      }
+      100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+  }
+  
