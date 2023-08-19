@@ -1,0 +1,133 @@
+.main_menu-popup {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    background-color: #fff;
+}
+
+
+.main_menu-popup-contents {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: #1683e9;
+}
+
+.side_menu {
+    display: flex;
+    flex-direction: column;
+    width: 45px;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side_menu-btmicons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side_menu-btmicons a {
+    padding: 10px 15px;
+}
+
+.side_menu-btmicons img {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.side_menu svg {
+    padding: 15px 15px;
+    color: #fff;
+}
+
+.side_menu svg:hover,
+.side_menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.square_menu {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    padding: 13px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.square_menu h4,
+.square_menu h2,
+.square_menu p {
+    color: #fff;
+    font-family: var(--font-base);
+}
+
+.square_menu h4 {
+    margin: 5px 0px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.square_menu-container {
+    width: 100%;
+}
+
+.square_menu-container-content {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    display: flex;
+}
+
+.profile_group {
+    display: flex;
+    flex-direction: column;
+    line-height: 2px;
+}
+
+.square_menu-container-content-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.item_icons,
+.item_icons-2 {
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px;
+    column-gap: 10px;
+    row-gap: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 100px;
+    min-height: 100px;
+    margin: 0 15px 0 0;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item_icons {
+
+    flex: 2;
+}
+
+.item_icons-2 {
+    flex: 1;
+}
+
+.item_icons img,
+.item_icons-2 img {
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    place-self: center;align-self: center;
+}
