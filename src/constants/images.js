@@ -15,6 +15,11 @@ import xd from '../assets/xd.svg';
 import figma from '../assets/figma.svg';
 import github from '../assets/github.svg';
 import more from '../assets/more.png';
+import laravel from '../assets/laravel.svg';
+import wordpress from '../assets/wordpress.svg';
+import mysql from '../assets/mysql.svg';
+import firebase from '../assets/firebase.svg';
+import mongodb from '../assets/mongodb.svg';
 
 
 //eslint-disable-next-line
@@ -35,5 +40,10 @@ export default {
     xd,
     figma,
     github,
-    more
+    more,
+    laravel,
+    wordpress,
+    mysql,
+    firebase,
+    mongodb
 };
