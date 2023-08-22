@@ -40,7 +40,7 @@ const Laptop = () => {
     }, [])
 
 
-    const [currentDate, setCurrentDate] = useState(getDate());
+    const currentDate = getDate();
 
     return (
         <div className='laptop_container'>
@@ -53,13 +53,16 @@ const Laptop = () => {
                         <MainMenu />
                     )}
                     {toggleMenu && (
-                        <div className='notification-popup'>
+                        <div className='notification-popup slide-bottom'>
                             asd
                         </div>
                     )}
                 </div>
+                
                 <div className='laptop_taskbar'>
+                    
                     <div style={{ display: 'flex' }}>
+                        
                         <FaWindows onClick={() => {
                             toggleWindow
                                 ? setToggleWindow(false)
