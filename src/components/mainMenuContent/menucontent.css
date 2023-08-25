@@ -1,0 +1,39 @@
+.notification-popup {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    background-color: #1683e9;
+    -ms-flex-align: end;
+    right: 45px;
+    bottom: 0;
+    padding: 15px;
+}
+
+.notif-container h4 {
+    text-align: center;
+    margin: 0 0 15px 0;
+    font-family: var(--font-base);
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.notif-container .icons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.notif-container .icons img {
+    width: 25px;
+    height: 25px;
+    color: #fff;
+}
+
+.notif-container .icons svg {
+    width: 25px;
+    height: 25px;
+    color: #fff;
+}
+

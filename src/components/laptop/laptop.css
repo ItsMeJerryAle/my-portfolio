@@ -120,18 +120,6 @@
     color: black;
 }
 
-
-.notification-popup {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    display: flex;
-    background-color: #fff;
-    -ms-flex-align: end;
-    right: 0;
-    bottom: 0;
-}
-
 .laptop_content-area {
     position: absolute;
     margin-bottom: 44px;

@@ -4,6 +4,7 @@ import './laptop.css';
 import { FaWindows, FaWifi, FaAngleUp, FaAngleDown } from 'react-icons/fa'
 import { HiVolumeUp } from 'react-icons/hi'
 import MainMenu from '../mainMenu/MainMenu';
+import MainMenuContent from '../mainMenuContent/MainMenuContent';
 
 
 
@@ -14,15 +15,6 @@ const getDate = () => {
     const date = today.getDate();
     return `${month}/${date}/${year}`;
 }
-
-const getHours = () => {
-    const today = new Date();
-    const hour = today.getHours();
-    const minutes = today.getMinutes();
-    const timer = hour >= 12 ? 'PM' : 'AM';
-    return `${hour}:${minutes} ${" "} ${timer}`;
-}
-
 
 const Laptop = () => {
     const [time, setTime] = useState(new Date());
@@ -46,16 +38,14 @@ const Laptop = () => {
         <div className='laptop_container'>
             <img src={images.laptop} alt="Laptop Img" className='laptop' />
             <img src={images.mobile} alt="Mobile Img" className='mobile' />
-
+            
             <div className={'laptop_content'} style={{ backgroundImage: 'url(/windows.png)' }}>
                 <div className='laptop_content-area '>
                     {toggleWindow && (
                         <MainMenu />
                     )}
                     {toggleMenu && (
-                        <div className='notification-popup slide-bottom'>
-                            asd
-                        </div>
+                        <MainMenuContent/>
                     )}
                 </div>
                 
@@ -90,6 +80,7 @@ const Laptop = () => {
                     </div>
                 </div>
             </div>
+            
         </div>
     )
 }

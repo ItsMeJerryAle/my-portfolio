@@ -2,7 +2,7 @@ import React from 'react';
 import './mainmenu.css';
 import { FaBars } from 'react-icons/fa';
 import { images } from '../../constants';
-import { AiOutlinePoweroff, AiOutlineSetting, AiOutlinePicture, AiOutlineFile,AiOutlineArrowRight } from 'react-icons/ai'
+import { AiOutlineEdit, AiOutlineSetting, AiOutlinePicture, AiOutlineFile,AiOutlineArrowRight } from 'react-icons/ai'
 
 const MainMenu = () => (
     <div className='main_menu-popup slide-bottom'>
@@ -16,7 +16,7 @@ const MainMenu = () => (
                     <p>Projects</p>
                     <p>Gallery</p>
                     <p>Contacts</p>
-                    <p>Shut Down</p>
+                    <p>Hire Me!</p>
                    </div>
                 </div>
                 <FaBars />
@@ -25,7 +25,7 @@ const MainMenu = () => (
                     <AiOutlineFile />
                     <AiOutlinePicture />
                     <AiOutlineSetting />
-                    <AiOutlinePoweroff />
+                    <AiOutlineEdit />
                 </div>
             </div>
 
@@ -65,21 +65,17 @@ const MainMenu = () => (
                         </div>
                         <div className='item_icons-2'>
                             <div  className='item_icons-container'>
-                            <img src={images.photoshop} alt="" />
-                            <img src={images.figma} alt="" />
-                            <img src={images.illustrator} alt="" />
-                            <img src={images.xd} alt="" />
-                            <img src={images.github} alt="" />
+                                <img src={images.photoshop} alt="" />
+                                <img src={images.figma} alt="" />
+                                <img src={images.illustrator} alt="" />
+                                <img src={images.xd} alt="" />
+                                <img src={images.github} alt="" />
                             </div>
-                            
                             <h4>Other Tools</h4>
                         </div >
-                     
                     </div>
-                    <div className='square_menu-container'>
-                    <h4>Contact Details</h4>
                 </div>
-                </div>
+
             </div>
 
         </div>

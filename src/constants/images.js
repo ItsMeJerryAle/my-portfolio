@@ -20,6 +20,7 @@ import wordpress from '../assets/wordpress.svg';
 import mysql from '../assets/mysql.svg';
 import firebase from '../assets/firebase.svg';
 import mongodb from '../assets/mongodb.svg';
+import linkedIn from '../assets/linkedIn.svg';
 
 
 //eslint-disable-next-line
@@ -45,5 +46,6 @@ export default {
     wordpress,
     mysql,
     firebase,
-    mongodb
+    mongodb,
+    linkedIn
 };
