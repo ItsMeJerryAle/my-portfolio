@@ -163,3 +163,13 @@
       }
   }
   
+
+  .taskbar-icons {
+    display: flex;
+  }
+
+  .taskbar-icons-app img {
+    width: 20px;
+    height: 20px;
+    padding: 20px 20px;
+  }

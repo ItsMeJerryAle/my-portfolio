@@ -21,6 +21,7 @@ import mysql from '../assets/mysql.svg';
 import firebase from '../assets/firebase.svg';
 import mongodb from '../assets/mongodb.svg';
 import linkedIn from '../assets/linkedIn.svg';
+import vscode from '../assets/vscode.svg';
 
 
 //eslint-disable-next-line
@@ -47,5 +48,6 @@ export default {
     mysql,
     firebase,
     mongodb,
-    linkedIn
+    linkedIn,
+    vscode
 };

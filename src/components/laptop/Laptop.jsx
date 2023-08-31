@@ -38,27 +38,30 @@ const Laptop = () => {
         <div className='laptop_container'>
             <img src={images.laptop} alt="Laptop Img" className='laptop' />
             <img src={images.mobile} alt="Mobile Img" className='mobile' />
-            
+
             <div className={'laptop_content'} style={{ backgroundImage: 'url(/windows.png)' }}>
                 <div className='laptop_content-area '>
                     {toggleWindow && (
                         <MainMenu />
                     )}
                     {toggleMenu && (
-                        <MainMenuContent/>
+                        <MainMenuContent />
                     )}
                 </div>
-                
+
                 <div className='laptop_taskbar'>
-                    
-                    <div style={{ display: 'flex' }}>
-                        
+
+                    <div className='taskbar-icons'>
+
                         <FaWindows onClick={() => {
                             toggleWindow
                                 ? setToggleWindow(false)
                                 : setToggleWindow(true)
                         }
                         } className='window-button' />
+                        <div className='taskbar-icons-app'>
+                            <a href="google.com"><img src={images.vscode} alt="vscode"/></a>
+                        </div>
                     </div>
                     <div className='laptop_taskbar-notif'>
                         <div style={{ display: 'flex' }}>
@@ -80,7 +83,7 @@ const Laptop = () => {
                     </div>
                 </div>
             </div>
-            
+
         </div>
     )
 }
