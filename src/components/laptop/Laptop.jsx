@@ -41,6 +41,12 @@ const Laptop = () => {
         ? settogglePortfolio(false)
         : settogglePortfolio(true)
         setToggleWindow(false)
+        setToggleMenu(false)
+    }
+
+    const toggleNavigation = () => {
+        settogglePortfolio(false)
+        toggleMenu ? setToggleMenu(false) : setToggleMenu(true)
     }
 
     useEffect(() => {
@@ -87,8 +93,8 @@ const Laptop = () => {
                         <div style={{ display: 'flex' }}>
                             {
                                 toggleMenu
-                                    ? <FaAngleDown style={{ marginRight: '5px' }} onClick={() => setToggleMenu(false)} />
-                                    : <FaAngleUp style={{ marginRight: '5px' }} onClick={() => setToggleMenu(true)} />
+                                    ? <FaAngleDown style={{ marginRight: '5px' }} onClick={() => toggleNavigation() } />
+                                    : <FaAngleUp style={{ marginRight: '5px' }} onClick={() => toggleNavigation() } />
                             }
                             <FaWifi />
                             <HiVolumeUp />

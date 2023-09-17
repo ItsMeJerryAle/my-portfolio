@@ -27,7 +27,7 @@ const PortfolioWindow = () => {
                         <FaRegBookmark />
                         <div>
                             <FaLock />
-                            https://jerry-ale-cv.vercel.app/
+                            https://portfolio-jerry.vercel.app/
                         </div>
                     </div>
                     <div className="right">
@@ -37,7 +37,7 @@ const PortfolioWindow = () => {
                     </div>
                 </div>
             </div>
-            <iframe src="https://jerry-ale-cv.vercel.app/" title="description" />
+            <iframe src="https://portfolio-jerry.vercel.app/" title="description" />
         </div>
     )
 }

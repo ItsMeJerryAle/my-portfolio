@@ -2,7 +2,7 @@ import React from 'react';
 import './mainmenu.css';
 import { FaBars } from 'react-icons/fa';
 import { images } from '../../constants';
-import { AiOutlineEdit, AiOutlineSetting, AiOutlinePicture, AiOutlineFile,AiOutlineArrowRight } from 'react-icons/ai'
+import { AiOutlineEdit, AiOutlineSetting, AiOutlinePicture, AiOutlineFile } from 'react-icons/ai'
 
 const MainMenu = () => (
     <div className='main_menu-popup slide-bottom'>
@@ -36,10 +36,11 @@ const MainMenu = () => (
                         <a href="google.com"><img src={images.icon} style={{width:'100px', height: '100px'}}alt="icon" /></a>
                         <div className='profile_group'>
                             <h2>Jerry S. Ale</h2>
-                            <p>Your next Frontend Developer</p>
-                            <a href="google.com" className='button-link'><p>See my portfolio</p> 
-                                    <AiOutlineArrowRight />
-                            </a>
+                            <p>Your next Frontend Developer
+
+                            Windows OS inspired webpage using CSS and ReactJS
+                            </p>
+                            <br />
                         </div>
                     </div>
                 </div>
