@@ -1,8 +1,6 @@
 .main_menu-popup {
     width: 500px;
     height: 400px;
-    z-index: 999;
-    
 }
 
 
@@ -12,7 +10,6 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    flex: 1;
     background-color: #1683e9;
 }
 

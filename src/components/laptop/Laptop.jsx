@@ -20,13 +20,28 @@ const getDate = () => {
 const Laptop = () => {
     const [time, setTime] = useState(new Date());
 
-    const [togglePortfolio, settogglePortfolio] = useState(true);
+    const [togglePortfolio, settogglePortfolio] = useState(false);
     const [toggleMenu, setToggleMenu] = useState(false);
     const [toggleWindow, setToggleWindow] = useState(false);
 
     const today = new Date();
     const hour = today.getHours();
     const timer = hour >= 12 ? 'PM' : 'AM';
+
+    const toggleWindowClick = () => {
+        settogglePortfolio(false)
+
+        toggleWindow
+            ? setToggleWindow(false)
+            : setToggleWindow(true)
+    }
+
+    const togglePortfolioClick = () => {
+        togglePortfolio
+        ? settogglePortfolio(false)
+        : settogglePortfolio(true)
+        setToggleWindow(false)
+    }
 
     useEffect(() => {
         setInterval(() =>
@@ -56,18 +71,14 @@ const Laptop = () => {
                     <div className='taskbar-icons'>
 
                         <FaWindows onClick={() => {
-                            toggleWindow
-                                ? setToggleWindow(false)
-                                : setToggleWindow(true)
+                            toggleWindowClick()
                         }
                         } className='window-button' />
                         <div className='taskbar-icons-app'>
                             <img src={images.vscode} alt="vscode" onClick={() => {
-                            togglePortfolio
-                                ? settogglePortfolio(false)
-                                : settogglePortfolio(true)
-                        }
-                        }/>
+                                togglePortfolioClick()
+                            }
+                            } />
                         </div>
 
 
