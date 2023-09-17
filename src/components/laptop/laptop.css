@@ -54,7 +54,7 @@
     padding: 7px 0 7px 0;
     justify-content: space-between;
     align-items: center;
-    z-index: 10;
+    z-index: 5;
     overflow: hidden;
 }
 
@@ -172,4 +172,77 @@
     width: 20px;
     height: 20px;
     padding: 20px 20px;
+  }
+
+  .portfolio {
+    position: inherit;
+    z-index: 1;
+    top: 80px;
+  }
+
+  .portfolio iframe {
+    width: 900px;
+    height: 450px;
+    border: 0;
+  }
+
+  .portfolio-topbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-topbar .right svg,
+  .portfolio-topbar .left svg {
+    margin-right: 15px;
+  }
+  .portfolio-topbar .menu {
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(216, 216, 216);
+    overflow: hidden;
+  }
+
+  .portfolio .search {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(156, 156, 156);
+    font-size: 14px;
+    padding-left: 10px;
+  }
+
+  .menu .left {
+    font-family: var(--font-base);
+    font-size: 12px;
+    background-color: rgb(156, 156, 156);
+    height: 30px;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .search .middle  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search .middle svg {
+    margin-right: 5px;
+  }
+
+  .search .middle div {
+    font-family: var(--font-base);
+    font-size: 12px;
+    width: 550px;
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(37, 37, 37);
+    color:#fff;
   }

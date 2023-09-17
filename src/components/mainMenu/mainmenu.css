@@ -1,8 +1,8 @@
 .main_menu-popup {
     width: 500px;
     height: 400px;
-    position: relative;
-    background-color: #fff;
+    z-index: 999;
+    
 }
 
 

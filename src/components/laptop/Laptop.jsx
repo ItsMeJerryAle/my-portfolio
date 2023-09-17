@@ -5,6 +5,7 @@ import { FaWindows, FaWifi, FaAngleUp, FaAngleDown } from 'react-icons/fa'
 import { HiVolumeUp } from 'react-icons/hi'
 import MainMenu from '../mainMenu/MainMenu';
 import MainMenuContent from '../mainMenuContent/MainMenuContent';
+import PortfolioWindow from '../portfolio/PortfolioWindow';
 
 
 
@@ -19,6 +20,7 @@ const getDate = () => {
 const Laptop = () => {
     const [time, setTime] = useState(new Date());
 
+    const [togglePortfolio, settogglePortfolio] = useState(true);
     const [toggleMenu, setToggleMenu] = useState(false);
     const [toggleWindow, setToggleWindow] = useState(false);
 
@@ -60,8 +62,15 @@ const Laptop = () => {
                         }
                         } className='window-button' />
                         <div className='taskbar-icons-app'>
-                            <a href="google.com"><img src={images.vscode} alt="vscode"/></a>
+                            <img src={images.vscode} alt="vscode" onClick={() => {
+                            togglePortfolio
+                                ? settogglePortfolio(false)
+                                : settogglePortfolio(true)
+                        }
+                        }/>
                         </div>
+
+
                     </div>
                     <div className='laptop_taskbar-notif'>
                         <div style={{ display: 'flex' }}>
@@ -84,6 +93,9 @@ const Laptop = () => {
                 </div>
             </div>
 
+            {togglePortfolio && (
+                <PortfolioWindow />
+            )}
         </div>
     )
 }
