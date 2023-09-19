@@ -142,15 +142,15 @@
 .profile_group {
     display: flex;
     flex-direction: column;
-    line-height: 2px;
     margin: 0 15px;
 }
 
 .profile_group h2 {
     font-size: 24px;
-    margin: 10px 0 10px 0px;
+    margin: 10px 0 0px 0px;
     font-weight: bold;
 }
+
 
 .square_menu-container-content-4 {
     display: flex;

@@ -33,20 +33,21 @@ const MainMenu = () => (
                 <div className='square_menu-container'>
                     <h4>My Profile</h4>
                     <div className='square_menu-container-content'>                     
-                        <a href="google.com"><img src={images.icon} style={{width:'100px', height: '100px'}}alt="icon" /></a>
+                        <a href="google.com"><img src={images.myimage} style={{width:'100px', height: 'auto'}}alt="icon" /></a>
                         <div className='profile_group'>
                             <h2>Jerry S. Ale</h2>
-                            <p>Your next Frontend Developer
-
-                            Windows OS inspired webpage using CSS and ReactJS
+                            <p className='tagline'><i>Your next Frontend Developer</i>
+                            </p><br />
+                            <p className='tagline-about'>Windows OS inspired webpage using CSS and ReactJS. Click on MS Edge Browser in the taskbar to open my portfolio
                             </p>
+                            
                             <br />
                         </div>
                     </div>
                 </div>
                
                 <div className='square_menu-container'>
-                    <h4>My Tools</h4>
+                    <h4>My Stack</h4>
                     <div className='square_menu-container-content-4'>                     
                         <div className='item_icons'>
                             <div className='item_icons-container'>
@@ -62,7 +63,7 @@ const MainMenu = () => (
                             <img src={images.firebase} alt="" />
                             <img src={images.mongodb} alt="" />
                             </div>
-                            <h4>Web Development Stack</h4>
+                            <h4>Tools and Frameworks I work with</h4>
                         </div>
                         <div className='item_icons-2'>
                             <div  className='item_icons-container'>
@@ -72,7 +73,7 @@ const MainMenu = () => (
                                 <img src={images.xd} alt="" />
                                 <img src={images.github} alt="" />
                             </div>
-                            <h4>Other Tools</h4>
+                            <h4>Additional Tools</h4>
                         </div >
                     </div>
                 </div>

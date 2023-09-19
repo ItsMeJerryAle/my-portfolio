@@ -163,7 +163,18 @@
       }
   }
   
+.tagline {
+  font-weight: 100;
+  font-size: 12px;
+  margin-top: -5px;
+}
 
+.tagline-about {
+  padding: 0px;
+  margin:-20px 0  0  0px ;
+  font-size: 12px;
+  line-height: 15px;
+}
   .taskbar-icons {
     display: flex;
   }
@@ -171,7 +182,12 @@
   .taskbar-icons-app img {
     width: 20px;
     height: 20px;
-    padding: 20px 20px;
+    padding: 20px 15px;
+  }
+
+  .taskbar-icons-app img:hover {
+    background-color: rgba(255,255,255,0.1);
+    cursor: pointer;  
   }
 
   .portfolio {

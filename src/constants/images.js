@@ -22,6 +22,9 @@ import firebase from '../assets/firebase.svg';
 import mongodb from '../assets/mongodb.svg';
 import linkedIn from '../assets/linkedIn.svg';
 import vscode from '../assets/vscode.svg';
+import edge from '../assets/edge.svg';
+import myimage from '../assets/myimage.png';
+import file from '../assets/file.png';
 
 
 //eslint-disable-next-line
@@ -49,5 +52,8 @@ export default {
     firebase,
     mongodb,
     linkedIn,
-    vscode
+    vscode,
+    edge,
+    myimage,
+    file
 };

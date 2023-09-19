@@ -38,8 +38,8 @@ const Laptop = () => {
 
     const togglePortfolioClick = () => {
         togglePortfolio
-        ? settogglePortfolio(false)
-        : settogglePortfolio(true)
+            ? settogglePortfolio(false)
+            : settogglePortfolio(true)
         setToggleWindow(false)
         setToggleMenu(false)
     }
@@ -81,10 +81,14 @@ const Laptop = () => {
                         }
                         } className='window-button' />
                         <div className='taskbar-icons-app'>
-                            <img src={images.vscode} alt="vscode" onClick={() => {
+                            <img src={images.edge} alt="vscode" onClick={() => {
                                 togglePortfolioClick()
                             }
                             } />
+
+                            <img src={images.file} alt="vscode" />
+                            <img src={images.edge} alt="vscode" />
+                            <img src={images.edge} alt="vscode" />
                         </div>
 
 
@@ -93,8 +97,8 @@ const Laptop = () => {
                         <div style={{ display: 'flex' }}>
                             {
                                 toggleMenu
-                                    ? <FaAngleDown style={{ marginRight: '5px' }} onClick={() => toggleNavigation() } />
-                                    : <FaAngleUp style={{ marginRight: '5px' }} onClick={() => toggleNavigation() } />
+                                    ? <FaAngleDown style={{ marginRight: '5px' }} onClick={() => toggleNavigation()} />
+                                    : <FaAngleUp style={{ marginRight: '5px' }} onClick={() => toggleNavigation()} />
                             }
                             <FaWifi />
                             <HiVolumeUp />
