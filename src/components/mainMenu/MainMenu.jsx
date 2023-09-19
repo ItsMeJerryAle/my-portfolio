@@ -2,7 +2,7 @@ import React from 'react';
 import './mainmenu.css';
 import { FaBars } from 'react-icons/fa';
 import { images } from '../../constants';
-import { AiOutlineEdit, AiOutlineSetting, AiOutlinePicture, AiOutlineFile } from 'react-icons/ai'
+import { AiOutlineEdit  } from 'react-icons/ai'
 
 const MainMenu = () => (
     <div className='main_menu-popup slide-bottom'>
@@ -13,18 +13,14 @@ const MainMenu = () => (
                    <h2>START</h2>
                    <div  className='popup-texts'>
                     <p>Jerry Ale</p>
-                    <p>Projects</p>
-                    <p>Gallery</p>
-                    <p>Contacts</p>
+                    
                     <p>Hire Me!</p>
                    </div>
                 </div>
                 <FaBars />
                 <div className='side_menu-btmicons '>
                     <a href="google.com"><img src={images.icon} alt="icon" /></a>
-                    <AiOutlineFile />
-                    <AiOutlinePicture />
-                    <AiOutlineSetting />
+                    
                     <AiOutlineEdit />
                 </div>
             </div>

@@ -81,14 +81,13 @@ const Laptop = () => {
                         }
                         } className='window-button' />
                         <div className='taskbar-icons-app'>
-                            <img src={images.edge} alt="vscode" onClick={() => {
+                            <img src={images.portfolio} alt="vscode" onClick={() => {
                                 togglePortfolioClick()
                             }
                             } />
 
-                            <img src={images.file} alt="vscode" />
-                            <img src={images.edge} alt="vscode" />
-                            <img src={images.edge} alt="vscode" />
+                            
+                           <img src={images.edge} alt="vscode" />
                         </div>
 
 

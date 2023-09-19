@@ -25,6 +25,7 @@ import vscode from '../assets/vscode.svg';
 import edge from '../assets/edge.svg';
 import myimage from '../assets/myimage.png';
 import file from '../assets/file.png';
+import portfolio from '../assets/portfolio.png';
 
 
 //eslint-disable-next-line
@@ -55,5 +56,6 @@ export default {
     vscode,
     edge,
     myimage,
-    file
+    file,
+    portfolio
 };
